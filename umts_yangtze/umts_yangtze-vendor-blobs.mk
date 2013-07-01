@@ -90,8 +90,8 @@ $(VENDOR_BLOB_FOLDER)/etc/mspfirmware/version.txt:/system/etc/mspfirmware/versio
 
 
 # /lib/egl/
-PRODUCT_COPY_FILES += \
-$(VENDOR_BLOB_FOLDER)/lib/egl/libGLES_android.so:/system/lib/egl/libGLES_android.so
+#PRODUCT_COPY_FILES += \
+#$(VENDOR_BLOB_FOLDER)/lib/egl/libGLES_android.so:/system/lib/egl/libGLES_android.so
 
 
 
@@ -99,56 +99,24 @@ $(VENDOR_BLOB_FOLDER)/lib/egl/libGLES_android.so:/system/lib/egl/libGLES_android
 PRODUCT_COPY_FILES += \
 $(VENDOR_BLOB_FOLDER)/lib/libmoto_mdmctrl.so:/system/lib/libmoto_mdmctrl.so \
 $(VENDOR_BLOB_FOLDER)/lib/lib-mot-lte-ril.so:/system/lib/lib-mot-lte-ril.so \
-$(VENDOR_BLOB_FOLDER)/lib/libEGL.so:/system/lib/libEGL.so \
 $(VENDOR_BLOB_FOLDER)/lib/libril_rds.so:/system/lib/libril_rds.so \
 $(VENDOR_BLOB_FOLDER)/lib/libmoto_nwif_ril.so:/system/lib/libmoto_nwif_ril.so \
 $(VENDOR_BLOB_FOLDER)/lib/moto-ril-multimode.so:/system/lib/moto-ril-multimode.so \
 $(VENDOR_BLOB_FOLDER)/lib/libmoto_ril.so:/system/lib/libmoto_ril.so \
 $(VENDOR_BLOB_FOLDER)/lib/libbabysit.so:/system/lib/libbabysit.so \
-$(VENDOR_BLOB_FOLDER)/lib/libGLES_trace.so:/system/lib/libGLES_trace.so \
 $(VENDOR_BLOB_FOLDER)/lib/libmotdb.so:/system/lib/libmotdb.so \
-$(VENDOR_BLOB_FOLDER)/lib/libGLESv2.so:/system/lib/libGLESv2.so \
 $(VENDOR_BLOB_FOLDER)/lib/libsensorhub_jni.so:/system/lib/libsensorhub_jni.so \
 $(VENDOR_BLOB_FOLDER)/lib/librds_util.so:/system/lib/librds_util.so \
-$(VENDOR_BLOB_FOLDER)/lib/libGLESv1_CM.so:/system/lib/libGLESv1_CM.so \
 $(VENDOR_BLOB_FOLDER)/lib/libmoto_qmi_ril.so:/system/lib/libmoto_qmi_ril.so
 
 
 
 # /lib/modules/
 PRODUCT_COPY_FILES += \
-$(VENDOR_BLOB_FOLDER)/lib/modules/wl12xx_sdio.ko:/system/lib/modules/wl12xx_sdio.ko \
-$(VENDOR_BLOB_FOLDER)/lib/modules/cifs.ko:/system/lib/modules/cifs.ko \
-$(VENDOR_BLOB_FOLDER)/lib/modules/aev.ko:/system/lib/modules/aev.ko \
-$(VENDOR_BLOB_FOLDER)/lib/modules/hsi_omap.ko:/system/lib/modules/hsi_omap.ko \
-$(VENDOR_BLOB_FOLDER)/lib/modules/lockd.ko:/system/lib/modules/lockd.ko \
-$(VENDOR_BLOB_FOLDER)/lib/modules/wl1251_spi.ko:/system/lib/modules/wl1251_spi.ko \
-$(VENDOR_BLOB_FOLDER)/lib/modules/wl12xx_spi.ko:/system/lib/modules/wl12xx_spi.ko \
-$(VENDOR_BLOB_FOLDER)/lib/modules/evfwd.ko:/system/lib/modules/evfwd.ko \
-$(VENDOR_BLOB_FOLDER)/lib/modules/nfs.ko:/system/lib/modules/nfs.ko \
-$(VENDOR_BLOB_FOLDER)/lib/modules/pvrsrvkm_sgx540_120.ko:/system/lib/modules/pvrsrvkm_sgx540_120.ko \
-$(VENDOR_BLOB_FOLDER)/lib/modules/wl1251_sdio.ko:/system/lib/modules/wl1251_sdio.ko \
-$(VENDOR_BLOB_FOLDER)/lib/modules/vpnclient.ko:/system/lib/modules/vpnclient.ko \
-$(VENDOR_BLOB_FOLDER)/lib/modules/cfg80211.ko:/system/lib/modules/cfg80211.ko \
-$(VENDOR_BLOB_FOLDER)/lib/modules/mac80211.ko:/system/lib/modules/mac80211.ko \
-$(VENDOR_BLOB_FOLDER)/lib/modules/caif_hsi.ko:/system/lib/modules/caif_hsi.ko \
-$(VENDOR_BLOB_FOLDER)/lib/modules/crc7.ko:/system/lib/modules/crc7.ko \
-$(VENDOR_BLOB_FOLDER)/lib/modules/wl1251.ko:/system/lib/modules/wl1251.ko \
-$(VENDOR_BLOB_FOLDER)/lib/modules/caif_serial.ko:/system/lib/modules/caif_serial.ko \
-$(VENDOR_BLOB_FOLDER)/lib/modules/scsi_wait_scan.ko:/system/lib/modules/scsi_wait_scan.ko \
-$(VENDOR_BLOB_FOLDER)/lib/modules/dummy.ko:/system/lib/modules/dummy.ko \
-$(VENDOR_BLOB_FOLDER)/lib/modules/sunrpc.ko:/system/lib/modules/sunrpc.ko \
-$(VENDOR_BLOB_FOLDER)/lib/modules/btwilink.ko:/system/lib/modules/btwilink.ko \
-$(VENDOR_BLOB_FOLDER)/lib/modules/lib80211.ko:/system/lib/modules/lib80211.ko \
-$(VENDOR_BLOB_FOLDER)/lib/modules/wl12xx.ko:/system/lib/modules/wl12xx.ko \
-$(VENDOR_BLOB_FOLDER)/lib/modules/compat.ko:/system/lib/modules/compat.ko \
-$(VENDOR_BLOB_FOLDER)/lib/modules/hsi_char.ko:/system/lib/modules/hsi_char.ko \
-$(VENDOR_BLOB_FOLDER)/lib/modules/nfs_acl.ko:/system/lib/modules/nfs_acl.ko
-
+$(VENDOR_BLOB_FOLDER)/lib/modules/pvrsrvkm_sgx540_120.ko:/system/lib/modules/pvrsrvkm_sgx540_120.ko
 
 # /lib/hw/
 PRODUCT_COPY_FILES += \
-$(VENDOR_BLOB_FOLDER)/lib/hw/gralloc.umts_yangtze.so:/system/lib/hw/gralloc.umts_yangtze.so \
 $(VENDOR_BLOB_FOLDER)/lib/hw/alsa.omap4.so:/system/lib/hw/alsa.omap4.so \
 $(VENDOR_BLOB_FOLDER)/lib/hw/gps.yangtze.so:/system/lib/hw/gps.yangtze.so \
 $(VENDOR_BLOB_FOLDER)/lib/hw/audio.a2dp.umts_yangtze.so:/system/lib/hw/audio.a2dp.umts_yangtze.so \
@@ -199,8 +167,8 @@ $(VENDOR_BLOB_FOLDER)/vendor/lib/egl/libGLESv1_CM_POWERVR_SGX540_120.so:/system/
 
 # /vendor/lib/hw/
 PRODUCT_COPY_FILES += \
-$(VENDOR_BLOB_FOLDER)/vendor/lib/hw/hwcomposer.omap4.so:/system/vendor/lib/hw/hwcomposer.omap4.so \
-$(VENDOR_BLOB_FOLDER)/vendor/lib/hw/gralloc.omap4430.so:/system/vendor/lib/hw/gralloc.omap4430.so
+$(VENDOR_BLOB_FOLDER)/vendor/lib/hw/hwcomposer.umts_yangtze.so:/system/vendor/lib/hw/hwcomposer.umts_yangtze.so \
+$(VENDOR_BLOB_FOLDER)/vendor/lib/hw/gralloc.umts_yangtze.so:/system/vendor/lib/hw/gralloc.umts_yangtze.so
 
 
 # /vendor/bin/
@@ -280,5 +248,5 @@ $(VENDOR_BLOB_FOLDER)/etc/omapcam/module1_ee/cid1039_ov8820_ducati_nsf_ldc.bin:s
 $(VENDOR_BLOB_FOLDER)/etc/omapcam/module1_ee/cid1039_ov8820_ipipe_ee_dcc.bin:system/etc/omapcam/module1_ee/cid1039_ov8820_ipipe_ee_dcc.bin
 
 # system/etc
-PRODUCT_COPY_FILES += \
-$(VENDOR_BLOB_FOLDER)/etc/firmware/ducati-m3.bin:/system/etc/firmware/ducati-m3.bin
+#PRODUCT_COPY_FILES += \
+#$(VENDOR_BLOB_FOLDER)/etc/firmware/ducati-m3.bin:/system/etc/firmware/ducati-m3.bin
