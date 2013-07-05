@@ -91,7 +91,7 @@ $(VENDOR_BLOB_FOLDER)/etc/mspfirmware/version.txt:/system/etc/mspfirmware/versio
 
 # /lib/egl/
 #PRODUCT_COPY_FILES += \
-#$(VENDOR_BLOB_FOLDER)/lib/egl/libGLES_android.so:/system/lib/egl/libGLES_android.so
+$(VENDOR_BLOB_FOLDER)/lib/egl/libGLES_android.so:/system/lib/egl/libGLES_android.so
 
 
 
@@ -167,9 +167,8 @@ $(VENDOR_BLOB_FOLDER)/vendor/lib/egl/libGLESv1_CM_POWERVR_SGX540_120.so:/system/
 
 # /vendor/lib/hw/
 PRODUCT_COPY_FILES += \
-$(VENDOR_BLOB_FOLDER)/vendor/lib/hw/hwcomposer.umts_yangtze.so:/system/vendor/lib/hw/hwcomposer.umts_yangtze.so \
-$(VENDOR_BLOB_FOLDER)/vendor/lib/hw/gralloc.umts_yangtze.so:/system/vendor/lib/hw/gralloc.umts_yangtze.so
-
+$(VENDOR_BLOB_FOLDER)/vendor/lib/hw/gralloc.umts_yangtze.so:/system/vendor/lib/hw/gralloc.umts_yangtze.so \
+$(VENDOR_BLOB_FOLDER)/vendor/lib/hw/hwcomposer.umts_yangtze.so:/system/vendor/lib/hw/hwcomposer.umts_yangtze.so
 
 # /vendor/bin/
 PRODUCT_COPY_FILES += \
