@@ -1,5 +1,10 @@
 VENDOR_BLOB_FOLDER := vendor/motorola/umts_yangtze/proprietary
 
+# /app/
+PRODUCT_COPY_FILES += \
+$(VENDOR_BLOB_FOLDER)/app/EasyTouch.apk:/system/app/EasyTouch.apk
+
+
 # /etc/omapcam/
 PRODUCT_COPY_FILES += \
 $(VENDOR_BLOB_FOLDER)/etc/omapcam/R8_MVEN002_LD2_ND0_IR0_SH0_FL1_SVEN002_DCCID1039_CAL.cfg:/system/etc/omapcam/R8_MVEN002_LD2_ND0_IR0_SH0_FL1_SVEN002_DCCID1039_CAL.cfg \
@@ -107,7 +112,9 @@ $(VENDOR_BLOB_FOLDER)/lib/libbabysit.so:/system/lib/libbabysit.so \
 $(VENDOR_BLOB_FOLDER)/lib/libmotdb.so:/system/lib/libmotdb.so \
 $(VENDOR_BLOB_FOLDER)/lib/libsensorhub_jni.so:/system/lib/libsensorhub_jni.so \
 $(VENDOR_BLOB_FOLDER)/lib/librds_util.so:/system/lib/librds_util.so \
-$(VENDOR_BLOB_FOLDER)/lib/libmoto_qmi_ril.so:/system/lib/libmoto_qmi_ril.so
+$(VENDOR_BLOB_FOLDER)/lib/libmoto_qmi_ril.so:/system/lib/libmoto_qmi_ril.so \
+$(VENDOR_BLOB_FOLDER)/lib/libaudioril.so:/system/lib/libaudioril.so \
+$(VENDOR_BLOB_FOLDER)/lib/libbt-aptx-4.0.3.so:/system/lib/libbt-aptx-4.0.3.so
 
 
 
@@ -117,22 +124,22 @@ $(VENDOR_BLOB_FOLDER)/lib/modules/pvrsrvkm_sgx540_120.ko:/system/lib/modules/pvr
 
 # /lib/hw/
 PRODUCT_COPY_FILES += \
-$(VENDOR_BLOB_FOLDER)/lib/hw/alsa.omap4.so:/system/lib/hw/alsa.omap4.so \
-$(VENDOR_BLOB_FOLDER)/lib/hw/gps.yangtze.so:/system/lib/hw/gps.yangtze.so \
-$(VENDOR_BLOB_FOLDER)/lib/hw/audio.a2dp.umts_yangtze.so:/system/lib/hw/audio.a2dp.umts_yangtze.so \
-$(VENDOR_BLOB_FOLDER)/lib/hw/keystore.default.so:/system/lib/hw/keystore.default.so \
-$(VENDOR_BLOB_FOLDER)/lib/hw/sensorhub.yangtze.so:/system/lib/hw/sensorhub.yangtze.so \
-$(VENDOR_BLOB_FOLDER)/lib/hw/lights.yangtze.so:/system/lib/hw/lights.yangtze.so \
-$(VENDOR_BLOB_FOLDER)/lib/hw/sensors.yangtze.so:/system/lib/hw/sensors.yangtze.so \
-$(VENDOR_BLOB_FOLDER)/lib/hw/audio_policy.omap4.so:/system/lib/hw/audio_policy.omap4.so \
 $(VENDOR_BLOB_FOLDER)/lib/hw/audio.usb.default.so:/system/lib/hw/audio.usb.default.so \
-$(VENDOR_BLOB_FOLDER)/lib/hw/audio.primary.default.so:/system/lib/hw/audio.primary.default.so \
-$(VENDOR_BLOB_FOLDER)/lib/hw/camera.omap4.so:/system/lib/hw/camera.omap4.so \
-$(VENDOR_BLOB_FOLDER)/lib/hw/power.default.so:/system/lib/hw/power.default.so \
+$(VENDOR_BLOB_FOLDER)/lib/hw/local_time.default.so:/system/lib/hw/local_time.default.so \
 $(VENDOR_BLOB_FOLDER)/lib/hw/audio_policy.default.so:/system/lib/hw/audio_policy.default.so \
-$(VENDOR_BLOB_FOLDER)/lib/hw/audio.primary.omap4.so:/system/lib/hw/audio.primary.omap4.so \
-$(VENDOR_BLOB_FOLDER)/lib/hw/power.omap4.so:/system/lib/hw/power.omap4.so \
-$(VENDOR_BLOB_FOLDER)/lib/hw/local_time.default.so:/system/lib/hw/local_time.default.so
+$(VENDOR_BLOB_FOLDER)/lib/hw/power.default.so:/system/lib/hw/power.default.so \
+$(VENDOR_BLOB_FOLDER)/lib/hw/audio.primary.default.so:/system/lib/hw/audio.primary.default.so \
+$(VENDOR_BLOB_FOLDER)/lib/hw/keystore.default.so:/system/lib/hw/keystore.default.so \
+$(VENDOR_BLOB_FOLDER)/lib/hw/alsa.umts_yangtze.so:/system/lib/hw/alsa.umts_yangtze.so \
+$(VENDOR_BLOB_FOLDER)/lib/hw/gps.umts_yangtze.so:/system/lib/hw/gps.umts_yangtze.so \
+$(VENDOR_BLOB_FOLDER)/lib/hw/audio.a2dp.umts_yangtze.so:/system/lib/hw/audio.a2dp.umts_yangtze.so \
+$(VENDOR_BLOB_FOLDER)/lib/hw/sensorhub.umts_yangtze.so:/system/lib/hw/sensorhub.umts_yangtze.so \
+$(VENDOR_BLOB_FOLDER)/lib/hw/lights.umts_yangtze.so:/system/lib/hw/lights.umts_yangtze.so \
+$(VENDOR_BLOB_FOLDER)/lib/hw/sensors.umts_yangtze.so:/system/lib/hw/sensors.umts_yangtze.so \
+$(VENDOR_BLOB_FOLDER)/lib/hw/audio_policy.umts_yangtze.so:/system/lib/hw/audio_policy.umts_yangtze.so \
+$(VENDOR_BLOB_FOLDER)/lib/hw/camera.umts_yangtze.so:/system/lib/hw/camera.umts_yangtze.so \
+$(VENDOR_BLOB_FOLDER)/lib/hw/audio.primary.umts_yangtze.so:/system/lib/hw/audio.primary.umts_yangtze.so \
+$(VENDOR_BLOB_FOLDER)/lib/hw/power.umts_yangtze.so:/system/lib/hw/power.umts_yangtze.so
 
 
 
@@ -204,12 +211,44 @@ $(VENDOR_BLOB_FOLDER)/etc/firmware/TIInit_10.6.15.bts:system/etc/firmware/TIInit
 $(VENDOR_BLOB_FOLDER)/etc/mspfirmware/mspfirmware.bin:/system/etc/mspfirmware/mspfirmware.bin \
 $(VENDOR_BLOB_FOLDER)/etc/mspfirmware/version.txt:/system/etc/mspfirmware/version.txt
 
+
+# system/etc/rootfs
+# For 2nd-init to replace the ramdisk
+PRODUCT_COPY_FILES += \
+$(VENDOR_BLOB_FOLDER)/etc/rootfs/init.target.rc:/system/etc/rootfs/init.target.rc \
+$(VENDOR_BLOB_FOLDER)/etc/rootfs/ueventd.mapphone_umts.rc:/system/etc/rootfs/ueventd.mapphone_umts.rc \
+$(VENDOR_BLOB_FOLDER)/etc/rootfs/charger:/system/etc/rootfs/charger \
+$(VENDOR_BLOB_FOLDER)/etc/rootfs/init:/system/etc/rootfs/init \
+$(VENDOR_BLOB_FOLDER)/etc/rootfs/ueventd.rc:/system/etc/rootfs/ueventd.rc \
+$(VENDOR_BLOB_FOLDER)/etc/rootfs/init.cm.rc:/system/etc/rootfs/init.cm.rc \
+$(VENDOR_BLOB_FOLDER)/etc/rootfs/init.mapphone_umts.rc:/system/etc/rootfs/init.mapphone_umts.rc \
+$(VENDOR_BLOB_FOLDER)/etc/rootfs/default.prop:/system/etc/rootfs/default.prop \
+$(VENDOR_BLOB_FOLDER)/etc/rootfs/init.rc:/system/etc/rootfs/init.rc \
+$(VENDOR_BLOB_FOLDER)/etc/rootfs/init.usb.rc:/system/etc/rootfs/init.usb.rc \
+$(VENDOR_BLOB_FOLDER)/etc/rootfs/ueventd.goldfish.rc:/system/etc/rootfs/ueventd.goldfish.rc \
+$(VENDOR_BLOB_FOLDER)/etc/rootfs/init.goldfish.rc:/system/etc/rootfs/init.goldfish.rc \
+$(VENDOR_BLOB_FOLDER)/etc/rootfs/init.mapphone_cdma.rc:/system/etc/rootfs/init.mapphone_cdma.rc \
+$(VENDOR_BLOB_FOLDER)/etc/rootfs/init.trace.rc:/system/etc/rootfs/init.trace.rc \
+$(VENDOR_BLOB_FOLDER)/etc/rootfs/ueventd.mapphone_cdma.rc:/system/etc/rootfs/ueventd.mapphone_cdma.rc \
+$(VENDOR_BLOB_FOLDER)/etc/rootfs/sbin/fixboot.sh:/system/etc/rootfs/sbin/fixboot.sh \
+$(VENDOR_BLOB_FOLDER)/etc/rootfs/sbin/adbd:/system/etc/rootfs/sbin/adbd \
+$(VENDOR_BLOB_FOLDER)/etc/rootfs/sbin/bbx:/system/etc/rootfs/sbin/bbx \
+$(VENDOR_BLOB_FOLDER)/etc/rootfs/res/images/charger/battery_2.png:/system/etc/rootfs/res/images/charger/battery_2.png \
+$(VENDOR_BLOB_FOLDER)/etc/rootfs/res/images/charger/battery_4.png:/system/etc/rootfs/res/images/charger/battery_4.png \
+$(VENDOR_BLOB_FOLDER)/etc/rootfs/res/images/charger/battery_0.png:/system/etc/rootfs/res/images/charger/battery_0.png \
+$(VENDOR_BLOB_FOLDER)/etc/rootfs/res/images/charger/battery_1.png:/system/etc/rootfs/res/images/charger/battery_1.png \
+$(VENDOR_BLOB_FOLDER)/etc/rootfs/res/images/charger/battery_5.png:/system/etc/rootfs/res/images/charger/battery_5.png \
+$(VENDOR_BLOB_FOLDER)/etc/rootfs/res/images/charger/battery_charge.png:/system/etc/rootfs/res/images/charger/battery_charge.png \
+$(VENDOR_BLOB_FOLDER)/etc/rootfs/res/images/charger/battery_3.png:/system/etc/rootfs/res/images/charger/battery_3.png \
+$(VENDOR_BLOB_FOLDER)/etc/rootfs/res/images/charger/battery_fail.png:/system/etc/rootfs/res/images/charger/battery_fail.png
+
+
 # system/usr
 #PRODUCT_COPY_FILES += \
 #$(VENDOR_BLOB_FOLDER)/usr/keylayout/cy8c201xx.kl:system/usr/keylayout/cy8c201xx.kl
 
 # system/lib/hw
-PRODUCT_COPY_FILES += \
+#PRODUCT_COPY_FILES += \
 $(VENDOR_BLOB_FOLDER)/lib/hw/audio.primary.omap4.so:/system/lib/hw/audio.primary.omap4.so
 
 # RIL files
