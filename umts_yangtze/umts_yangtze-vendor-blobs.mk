@@ -120,7 +120,34 @@ $(VENDOR_BLOB_FOLDER)/lib/libbt-aptx-4.0.3.so:/system/lib/libbt-aptx-4.0.3.so
 
 # /lib/modules/
 PRODUCT_COPY_FILES += \
-$(VENDOR_BLOB_FOLDER)/lib/modules/pvrsrvkm_sgx540_120.ko:/system/lib/modules/pvrsrvkm_sgx540_120.ko
+$(VENDOR_BLOB_FOLDER)/lib/modules/pvrsrvkm_sgx540_120.ko:/system/lib/modules/pvrsrvkm_sgx540_120.ko \
+$(VENDOR_BLOB_FOLDER)/lib/modules/nfs.ko:/system/lib/modules/nfs.ko \
+$(VENDOR_BLOB_FOLDER)/lib/modules/caif_hsi.ko:/system/lib/modules/caif_hsi.ko \
+$(VENDOR_BLOB_FOLDER)/lib/modules/scsi_wait_scan.ko:/system/lib/modules/scsi_wait_scan.ko \
+$(VENDOR_BLOB_FOLDER)/lib/modules/lockd.ko:/system/lib/modules/lockd.ko \
+$(VENDOR_BLOB_FOLDER)/lib/modules/crc7.ko:/system/lib/modules/crc7.ko \
+$(VENDOR_BLOB_FOLDER)/lib/modules/wl1251.ko:/system/lib/modules/wl1251.ko \
+$(VENDOR_BLOB_FOLDER)/lib/modules/hsi_char.ko:/system/lib/modules/hsi_char.ko \
+$(VENDOR_BLOB_FOLDER)/lib/modules/cfg80211.ko:/system/lib/modules/cfg80211.ko \
+$(VENDOR_BLOB_FOLDER)/lib/modules/caif_serial.ko:/system/lib/modules/caif_serial.ko \
+$(VENDOR_BLOB_FOLDER)/lib/modules/dummy.ko:/system/lib/modules/dummy.ko \
+$(VENDOR_BLOB_FOLDER)/lib/modules/wl1251_spi.ko:/system/lib/modules/wl1251_spi.ko \
+$(VENDOR_BLOB_FOLDER)/lib/modules/lib80211.ko:/system/lib/modules/lib80211.ko \
+$(VENDOR_BLOB_FOLDER)/lib/modules/btwilink.ko:/system/lib/modules/btwilink.ko \
+$(VENDOR_BLOB_FOLDER)/lib/modules/vpnclient.ko:/system/lib/modules/vpnclient.ko \
+$(VENDOR_BLOB_FOLDER)/lib/modules/wl12xx_sdio.ko:/system/lib/modules/wl12xx_sdio.ko \
+$(VENDOR_BLOB_FOLDER)/lib/modules/mac80211.ko:/system/lib/modules/mac80211.ko \
+$(VENDOR_BLOB_FOLDER)/lib/modules/sunrpc.ko:/system/lib/modules/sunrpc.ko \
+$(VENDOR_BLOB_FOLDER)/lib/modules/wl12xx.ko:/system/lib/modules/wl12xx.ko \
+$(VENDOR_BLOB_FOLDER)/lib/modules/aev.ko:/system/lib/modules/aev.ko \
+$(VENDOR_BLOB_FOLDER)/lib/modules/nfs_acl.ko:/system/lib/modules/nfs_acl.ko \
+$(VENDOR_BLOB_FOLDER)/lib/modules/wl12xx_spi.ko:/system/lib/modules/wl12xx_spi.ko \
+$(VENDOR_BLOB_FOLDER)/lib/modules/hsi_omap.ko:/system/lib/modules/hsi_omap.ko \
+$(VENDOR_BLOB_FOLDER)/lib/modules/compat.ko:/system/lib/modules/compat.ko \
+$(VENDOR_BLOB_FOLDER)/lib/modules/evfwd.ko:/system/lib/modules/evfwd.ko \
+$(VENDOR_BLOB_FOLDER)/lib/modules/cifs.ko:/system/lib/modules/cifs.ko \
+$(VENDOR_BLOB_FOLDER)/lib/modules/wl1251_sdio.ko:/system/lib/modules/wl1251_sdio.ko
+
 
 # /lib/hw/
 PRODUCT_COPY_FILES += \
@@ -202,14 +229,28 @@ $(VENDOR_BLOB_FOLDER)/bin/akmd8975:/system/bin/akmd8975 \
 $(VENDOR_BLOB_FOLDER)/bin/ap_gain.bin:/system/bin/ap_gain.bin \
 $(VENDOR_BLOB_FOLDER)/bin/ap_gain_france.bin:/system/bin/ap_gain_france.bin \
 $(VENDOR_BLOB_FOLDER)/bin/ap_gain_mmul.bin:/system/bin/ap_gain_mmul.bin \
-$(VENDOR_BLOB_FOLDER)/bin/msp430:/system/bin/msp430
+$(VENDOR_BLOB_FOLDER)/bin/wifiupgradecal.sh:/system/bin/wifiupgradecal.sh \
+$(VENDOR_BLOB_FOLDER)/bin/msp430:/system/bin/msp430 \
+$(VENDOR_BLOB_FOLDER)/bin/wifical.sh:system/bin/wifical.sh \
+
 
 # system/etc
 PRODUCT_COPY_FILES += \
 $(VENDOR_BLOB_FOLDER)/etc/firmware/ducati-m3.bin:/system/etc/firmware/ducati-m3.bin \
 $(VENDOR_BLOB_FOLDER)/etc/firmware/TIInit_10.6.15.bts:system/etc/firmware/TIInit_10.6.15.bts \
+$(VENDOR_BLOB_FOLDER)/etc/firmware/fm_rx_init_1283.2.bts:system/etc/firmware/fm_rx_init_1283.2.bts \
+$(VENDOR_BLOB_FOLDER)/etc/firmware/fmc_init_1283.2.bts:system/etc/firmware/fmc_init_1283.2.bts \
+$(VENDOR_BLOB_FOLDER)/etc/firmware/ap_bt_data.bin:system/etc/firmware/ap_bt_data.bin \
+$(VENDOR_BLOB_FOLDER)/etc/firmware/ti-connectivity/wl1271-fw-multirole-plt.bin:system/etc/firmware/ti-connectivity/wl1271-fw-multirole-plt.bin \
+$(VENDOR_BLOB_FOLDER)/etc/firmware/ti-connectivity/wl1271-fw-multirole-roc.bin:system/etc/firmware/ti-connectivity/wl1271-fw-multirole-roc.bin \
+$(VENDOR_BLOB_FOLDER)/etc/firmware/ti-connectivity/wl128x-fw-multirole-roc.bin:system/etc/firmware/ti-connectivity/wl128x-fw-multirole-roc.bin \
+$(VENDOR_BLOB_FOLDER)/etc/firmware/ti-connectivity/wl1271-nvs.bin:system/etc/firmware/ti-connectivity/wl1271-nvs.bin \
+$(VENDOR_BLOB_FOLDER)/etc/firmware/ti-connectivity/wl128x-fw-multirole-plt.bin:system/etc/firmware/ti-connectivity/wl128x-fw-multirole-plt.bin \
 $(VENDOR_BLOB_FOLDER)/etc/mspfirmware/mspfirmware.bin:/system/etc/mspfirmware/mspfirmware.bin \
-$(VENDOR_BLOB_FOLDER)/etc/mspfirmware/version.txt:/system/etc/mspfirmware/version.txt
+$(VENDOR_BLOB_FOLDER)/etc/mspfirmware/version.txt:/system/etc/mspfirmware/version.txt \
+$(VENDOR_BLOB_FOLDER)/etc/wifi/wlan_fem.ini:/system/etc/wifi/wlan_fem.ini \
+$(VENDOR_BLOB_FOLDER)/etc/wifi/hostapd.conf:/system/etc/wifi/hostapd.conf \
+$(VENDOR_BLOB_FOLDER)/etc/wifi/wpa_supplicant.conf:/system/etc/wifi/wpa_supplicant.conf
 
 
 # system/etc/rootfs
