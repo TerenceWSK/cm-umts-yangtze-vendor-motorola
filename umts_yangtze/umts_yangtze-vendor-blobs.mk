@@ -1,8 +1,8 @@
 VENDOR_BLOB_FOLDER := vendor/motorola/umts_yangtze/proprietary
 
 # /app/
-PRODUCT_COPY_FILES += \
-$(VENDOR_BLOB_FOLDER)/app/EasyTouch.apk:/system/app/EasyTouch.apk
+#PRODUCT_COPY_FILES += \
+$(VENDOR_BLOB_FOLDER)/app/ButtonSaver.apk:/system/app/ButtonSaver.apk
 
 
 # /etc/omapcam/
@@ -164,7 +164,6 @@ $(VENDOR_BLOB_FOLDER)/lib/hw/sensorhub.umts_yangtze.so:/system/lib/hw/sensorhub.
 $(VENDOR_BLOB_FOLDER)/lib/hw/lights.umts_yangtze.so:/system/lib/hw/lights.umts_yangtze.so \
 $(VENDOR_BLOB_FOLDER)/lib/hw/sensors.umts_yangtze.so:/system/lib/hw/sensors.umts_yangtze.so \
 $(VENDOR_BLOB_FOLDER)/lib/hw/audio_policy.umts_yangtze.so:/system/lib/hw/audio_policy.umts_yangtze.so \
-$(VENDOR_BLOB_FOLDER)/lib/hw/camera.umts_yangtze.so:/system/lib/hw/camera.umts_yangtze.so \
 $(VENDOR_BLOB_FOLDER)/lib/hw/audio.primary.umts_yangtze.so:/system/lib/hw/audio.primary.umts_yangtze.so \
 $(VENDOR_BLOB_FOLDER)/lib/hw/power.umts_yangtze.so:/system/lib/hw/power.umts_yangtze.so
 
@@ -231,7 +230,7 @@ $(VENDOR_BLOB_FOLDER)/bin/ap_gain_france.bin:/system/bin/ap_gain_france.bin \
 $(VENDOR_BLOB_FOLDER)/bin/ap_gain_mmul.bin:/system/bin/ap_gain_mmul.bin \
 $(VENDOR_BLOB_FOLDER)/bin/wifiupgradecal.sh:/system/bin/wifiupgradecal.sh \
 $(VENDOR_BLOB_FOLDER)/bin/msp430:/system/bin/msp430 \
-$(VENDOR_BLOB_FOLDER)/bin/wifical.sh:system/bin/wifical.sh \
+$(VENDOR_BLOB_FOLDER)/bin/wifical.sh:system/bin/wifical.sh
 
 
 # system/etc
