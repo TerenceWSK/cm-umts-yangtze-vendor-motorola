@@ -114,7 +114,11 @@ $(VENDOR_BLOB_FOLDER)/lib/libsensorhub_jni.so:/system/lib/libsensorhub_jni.so \
 $(VENDOR_BLOB_FOLDER)/lib/librds_util.so:/system/lib/librds_util.so \
 $(VENDOR_BLOB_FOLDER)/lib/libmoto_qmi_ril.so:/system/lib/libmoto_qmi_ril.so \
 $(VENDOR_BLOB_FOLDER)/lib/libaudioril.so:/system/lib/libaudioril.so \
-$(VENDOR_BLOB_FOLDER)/lib/libbt-aptx-4.0.3.so:/system/lib/libbt-aptx-4.0.3.so
+$(VENDOR_BLOB_FOLDER)/lib/libbt-aptx-4.0.3.so:/system/lib/libbt-aptx-4.0.3.so \
+$(VENDOR_BLOB_FOLDER)/lib/libbluetooth.so:/system/lib/libbluetooth.so \
+$(VENDOR_BLOB_FOLDER)/lib/libbluetoothd.so:/system/lib/libbluetoothd.so \
+$(VENDOR_BLOB_FOLDER)/lib/libbtio.so:/system/lib/libbtio.so \
+$(VENDOR_BLOB_FOLDER)/lib/libglib.so:/system/lib/libglib.so
 
 
 
@@ -230,7 +234,11 @@ $(VENDOR_BLOB_FOLDER)/bin/ap_gain_france.bin:/system/bin/ap_gain_france.bin \
 $(VENDOR_BLOB_FOLDER)/bin/ap_gain_mmul.bin:/system/bin/ap_gain_mmul.bin \
 $(VENDOR_BLOB_FOLDER)/bin/wifiupgradecal.sh:/system/bin/wifiupgradecal.sh \
 $(VENDOR_BLOB_FOLDER)/bin/msp430:/system/bin/msp430 \
-$(VENDOR_BLOB_FOLDER)/bin/wifical.sh:system/bin/wifical.sh
+$(VENDOR_BLOB_FOLDER)/bin/wifical.sh:system/bin/wifical.sh \
+$(VENDOR_BLOB_FOLDER)/bin/dbus-daemon:system/bin/dbus-daemon \
+$(VENDOR_BLOB_FOLDER)/bin/bluetoothd:system/bin/bluetoothd \
+$(VENDOR_BLOB_FOLDER)/bin/hciattach:system/bin/hciattach
+
 
 
 # system/etc

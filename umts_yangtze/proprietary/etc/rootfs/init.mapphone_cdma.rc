@@ -673,7 +673,7 @@ service p2p_supplicant /system/bin/wpa_supplicant -Dnl80211 -iwlan0 -c/data/misc
     oneshot
 service hciattach /system/bin/hciattach -l
     class main
-    user bluetooth
+    user system
     group bluetooth net_bt_admin
     disabled
     oneshot
