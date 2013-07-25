@@ -1,9 +1,11 @@
 VENDOR_BLOB_FOLDER := vendor/motorola/umts_yangtze/proprietary
 
 # /app/
-#PRODUCT_COPY_FILES += \
-$(VENDOR_BLOB_FOLDER)/app/ButtonSaver.apk:/system/app/ButtonSaver.apk
+PRODUCT_COPY_FILES += \
+$(VENDOR_BLOB_FOLDER)/app/FMRadio.apk:/system/app/FMRadio.apk \
+$(VENDOR_BLOB_FOLDER)/app/FMRadioService.apk:/system/app/FMRadioService.apk
 
+#$(VENDOR_BLOB_FOLDER)/app/ButtonSaver.apk:/system/app/ButtonSaver.apk
 
 # /etc/omapcam/
 PRODUCT_COPY_FILES += \
@@ -113,7 +115,14 @@ $(VENDOR_BLOB_FOLDER)/lib/libmotdb.so:/system/lib/libmotdb.so \
 $(VENDOR_BLOB_FOLDER)/lib/libsensorhub_jni.so:/system/lib/libsensorhub_jni.so \
 $(VENDOR_BLOB_FOLDER)/lib/librds_util.so:/system/lib/librds_util.so \
 $(VENDOR_BLOB_FOLDER)/lib/libmoto_qmi_ril.so:/system/lib/libmoto_qmi_ril.so \
-$(VENDOR_BLOB_FOLDER)/lib/libaudioril.so:/system/lib/libaudioril.so
+$(VENDOR_BLOB_FOLDER)/lib/libaudioril.so:/system/lib/libaudioril.so \
+$(VENDOR_BLOB_FOLDER)/lib/libmcphal.so:/system/lib/libmcphal.so \
+$(VENDOR_BLOB_FOLDER)/lib/libfmradioplayer.so:/system/lib/libfmradioplayer.so \
+$(VENDOR_BLOB_FOLDER)/lib/libfmchr.so:/system/lib/libfmchr.so \
+$(VENDOR_BLOB_FOLDER)/lib/libfmradio_jni.so:/system/lib/libfmradio_jni.so \
+$(VENDOR_BLOB_FOLDER)/lib/libfm_stack.so:/system/lib/libfm_stack.so \
+$(VENDOR_BLOB_FOLDER)/lib/libFMRadio.so:/system/lib/libFMRadio.so
+
 
 # /lib/modules/
 PRODUCT_COPY_FILES += \
@@ -228,9 +237,8 @@ $(VENDOR_BLOB_FOLDER)/bin/ap_gain_france.bin:/system/bin/ap_gain_france.bin \
 $(VENDOR_BLOB_FOLDER)/bin/ap_gain_mmul.bin:/system/bin/ap_gain_mmul.bin \
 $(VENDOR_BLOB_FOLDER)/bin/wifiupgradecal.sh:/system/bin/wifiupgradecal.sh \
 $(VENDOR_BLOB_FOLDER)/bin/msp430:/system/bin/msp430 \
-$(VENDOR_BLOB_FOLDER)/bin/wifical.sh:system/bin/wifical.sh
-
-#$(VENDOR_BLOB_FOLDER)/bin/dbus-daemon:system/bin/dbus-daemon
+$(VENDOR_BLOB_FOLDER)/bin/wifical.sh:system/bin/wifical.sh \
+$(VENDOR_BLOB_FOLDER)/bin/fmradioserver:system/bin/fmradioserver
 
 # system/etc
 PRODUCT_COPY_FILES += \
