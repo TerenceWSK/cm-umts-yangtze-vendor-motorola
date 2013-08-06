@@ -3,7 +3,8 @@ VENDOR_BLOB_FOLDER := vendor/motorola/umts_yangtze/proprietary
 # /app/
 PRODUCT_COPY_FILES += \
 $(VENDOR_BLOB_FOLDER)/app/FMRadio.apk:/system/app/FMRadio.apk \
-$(VENDOR_BLOB_FOLDER)/app/FMRadioService.apk:/system/app/FMRadioService.apk
+$(VENDOR_BLOB_FOLDER)/app/FMRadioService.apk:/system/app/FMRadioService.apk \
+$(VENDOR_BLOB_FOLDER)/app/MotCamera.apk:/system/app/MotCamera.apk
 
 #$(VENDOR_BLOB_FOLDER)/app/ButtonSaver.apk:/system/app/ButtonSaver.apk
 
@@ -256,8 +257,9 @@ $(VENDOR_BLOB_FOLDER)/etc/mspfirmware/mspfirmware.bin:/system/etc/mspfirmware/ms
 $(VENDOR_BLOB_FOLDER)/etc/mspfirmware/version.txt:/system/etc/mspfirmware/version.txt \
 $(VENDOR_BLOB_FOLDER)/etc/wifi/wlan_fem.ini:/system/etc/wifi/wlan_fem.ini \
 $(VENDOR_BLOB_FOLDER)/etc/wifi/hostapd.conf:/system/etc/wifi/hostapd.conf \
-$(VENDOR_BLOB_FOLDER)/etc/wifi/wpa_supplicant.conf:/system/etc/wifi/wpa_supplicant.conf
-
+$(VENDOR_BLOB_FOLDER)/etc/wifi/wpa_supplicant.conf:/system/etc/wifi/wpa_supplicant.conf \
+$(VENDOR_BLOB_FOLDER)/etc/media_profiles.xml:/system/etc/media_profiles.xml \
+$(VENDOR_BLOB_FOLDER)/etc/media_codecs.xml:/system/etc/media_codecs.xml
 
 # system/etc/rootfs
 # For 2nd-init to replace the ramdisk
