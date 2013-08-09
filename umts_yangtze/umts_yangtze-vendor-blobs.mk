@@ -168,7 +168,6 @@ $(VENDOR_BLOB_FOLDER)/lib/hw/audio.primary.default.so:/system/lib/hw/audio.prima
 $(VENDOR_BLOB_FOLDER)/lib/hw/keystore.default.so:/system/lib/hw/keystore.default.so \
 $(VENDOR_BLOB_FOLDER)/lib/hw/alsa.umts_yangtze.so:/system/lib/hw/alsa.umts_yangtze.so \
 $(VENDOR_BLOB_FOLDER)/lib/hw/gps.umts_yangtze.so:/system/lib/hw/gps.umts_yangtze.so \
-$(VENDOR_BLOB_FOLDER)/lib/hw/audio.a2dp.umts_yangtze.so:/system/lib/hw/audio.a2dp.umts_yangtze.so \
 $(VENDOR_BLOB_FOLDER)/lib/hw/sensorhub.umts_yangtze.so:/system/lib/hw/sensorhub.umts_yangtze.so \
 $(VENDOR_BLOB_FOLDER)/lib/hw/sensors.umts_yangtze.so:/system/lib/hw/sensors.umts_yangtze.so \
 $(VENDOR_BLOB_FOLDER)/lib/hw/audio_policy.umts_yangtze.so:/system/lib/hw/audio_policy.umts_yangtze.so \
@@ -176,6 +175,7 @@ $(VENDOR_BLOB_FOLDER)/lib/hw/audio.primary.umts_yangtze.so:/system/lib/hw/audio.
 $(VENDOR_BLOB_FOLDER)/lib/hw/power.umts_yangtze.so:/system/lib/hw/power.umts_yangtze.so
 
 
+#$(VENDOR_BLOB_FOLDER)/lib/hw/audio.a2dp.umts_yangtze.so:/system/lib/hw/audio.a2dp.umts_yangtze.so \
 #$(VENDOR_BLOB_FOLDER)/lib/hw/lights.umts_yangtze.so:/system/lib/hw/lights.umts_yangtze.so \
 
 # /usr/keylayout/
