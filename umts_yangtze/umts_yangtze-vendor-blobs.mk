@@ -122,8 +122,9 @@ $(VENDOR_BLOB_FOLDER)/lib/libfmradioplayer.so:/system/lib/libfmradioplayer.so \
 $(VENDOR_BLOB_FOLDER)/lib/libfmchr.so:/system/lib/libfmchr.so \
 $(VENDOR_BLOB_FOLDER)/lib/libfmradio_jni.so:/system/lib/libfmradio_jni.so \
 $(VENDOR_BLOB_FOLDER)/lib/libfm_stack.so:/system/lib/libfm_stack.so \
-$(VENDOR_BLOB_FOLDER)/lib/libFMRadio.so:/system/lib/libFMRadio.so \
-$(VENDOR_BLOB_FOLDER)/lib/libbt-aptx-4.0.3.so:/system/lib/libbt-aptx-4.0.3.so
+$(VENDOR_BLOB_FOLDER)/lib/libFMRadio.so:/system/lib/libFMRadio.so
+
+#$(VENDOR_BLOB_FOLDER)/lib/libbt-aptx-4.0.3.so:/system/lib/libbt-aptx-4.0.3.so
 
 
 # /lib/modules/
@@ -242,8 +243,9 @@ $(VENDOR_BLOB_FOLDER)/bin/msp430:/system/bin/msp430 \
 $(VENDOR_BLOB_FOLDER)/bin/wifical.sh:system/bin/wifical.sh \
 $(VENDOR_BLOB_FOLDER)/bin/wificalcheck.sh:system/bin/wificalcheck.sh \
 $(VENDOR_BLOB_FOLDER)/bin/calibrator:system/bin/calibrator \
-$(VENDOR_BLOB_FOLDER)/bin/fmradioserver:system/bin/fmradioserver \
-$(VENDOR_BLOB_FOLDER)/bin/battd:system/bin/battd
+$(VENDOR_BLOB_FOLDER)/bin/fmradioserver:system/bin/fmradioserver
+
+#$(VENDOR_BLOB_FOLDER)/bin/battd:system/bin/battd
 
 # system/etc
 PRODUCT_COPY_FILES += \
