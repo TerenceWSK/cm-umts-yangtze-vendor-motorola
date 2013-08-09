@@ -122,7 +122,8 @@ $(VENDOR_BLOB_FOLDER)/lib/libfmradioplayer.so:/system/lib/libfmradioplayer.so \
 $(VENDOR_BLOB_FOLDER)/lib/libfmchr.so:/system/lib/libfmchr.so \
 $(VENDOR_BLOB_FOLDER)/lib/libfmradio_jni.so:/system/lib/libfmradio_jni.so \
 $(VENDOR_BLOB_FOLDER)/lib/libfm_stack.so:/system/lib/libfm_stack.so \
-$(VENDOR_BLOB_FOLDER)/lib/libFMRadio.so:/system/lib/libFMRadio.so
+$(VENDOR_BLOB_FOLDER)/lib/libFMRadio.so:/system/lib/libFMRadio.so \
+$(VENDOR_BLOB_FOLDER)/lib/libbt-aptx-4.0.3.so:/system/lib/libbt-aptx-4.0.3.so
 
 
 # /lib/modules/
@@ -169,13 +170,13 @@ $(VENDOR_BLOB_FOLDER)/lib/hw/alsa.umts_yangtze.so:/system/lib/hw/alsa.umts_yangt
 $(VENDOR_BLOB_FOLDER)/lib/hw/gps.umts_yangtze.so:/system/lib/hw/gps.umts_yangtze.so \
 $(VENDOR_BLOB_FOLDER)/lib/hw/audio.a2dp.umts_yangtze.so:/system/lib/hw/audio.a2dp.umts_yangtze.so \
 $(VENDOR_BLOB_FOLDER)/lib/hw/sensorhub.umts_yangtze.so:/system/lib/hw/sensorhub.umts_yangtze.so \
-$(VENDOR_BLOB_FOLDER)/lib/hw/lights.umts_yangtze.so:/system/lib/hw/lights.umts_yangtze.so \
 $(VENDOR_BLOB_FOLDER)/lib/hw/sensors.umts_yangtze.so:/system/lib/hw/sensors.umts_yangtze.so \
 $(VENDOR_BLOB_FOLDER)/lib/hw/audio_policy.umts_yangtze.so:/system/lib/hw/audio_policy.umts_yangtze.so \
 $(VENDOR_BLOB_FOLDER)/lib/hw/audio.primary.umts_yangtze.so:/system/lib/hw/audio.primary.umts_yangtze.so \
 $(VENDOR_BLOB_FOLDER)/lib/hw/power.umts_yangtze.so:/system/lib/hw/power.umts_yangtze.so
 
 
+#$(VENDOR_BLOB_FOLDER)/lib/hw/lights.umts_yangtze.so:/system/lib/hw/lights.umts_yangtze.so \
 
 # /usr/keylayout/
 PRODUCT_COPY_FILES += \
@@ -241,7 +242,8 @@ $(VENDOR_BLOB_FOLDER)/bin/msp430:/system/bin/msp430 \
 $(VENDOR_BLOB_FOLDER)/bin/wifical.sh:system/bin/wifical.sh \
 $(VENDOR_BLOB_FOLDER)/bin/wificalcheck.sh:system/bin/wificalcheck.sh \
 $(VENDOR_BLOB_FOLDER)/bin/calibrator:system/bin/calibrator \
-$(VENDOR_BLOB_FOLDER)/bin/fmradioserver:system/bin/fmradioserver
+$(VENDOR_BLOB_FOLDER)/bin/fmradioserver:system/bin/fmradioserver \
+$(VENDOR_BLOB_FOLDER)/bin/battd:system/bin/battd
 
 # system/etc
 PRODUCT_COPY_FILES += \
